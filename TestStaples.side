@@ -1,0 +1,156 @@
+{
+  "id": "1f63c400-63b1-46e6-ae93-298045f90c02",
+  "version": "2.0",
+  "name": "First Test",
+  "url": "https://www.google.pl/",
+  "tests": [{
+    "id": "ecf4ba3c-10be-4da9-adaf-8e2356f87166",
+    "name": "Test jeden",
+    "commands": [{
+      "id": "cedd51ff-9641-4bc9-b7b5-08808bd7989f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.pl/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d3c3c99-e80f-45dc-b1a3-d25d5e17cb28",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b859dc2-992d-49e0-9043-ddad7c8072d7",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "staples solutions uk"
+    }, {
+      "id": "bf3e5444-a6e1-4296-96c8-9832a5140d4b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "94a2b7bc-b233-4cea-ae7d-20a6c659d263",
+      "comment": "",
+      "command": "click",
+      "target": "id=resultStats",
+      "targets": [
+        ["id=resultStats", "id"],
+        ["css=#resultStats", "css:finder"],
+        ["xpath=//div[@id='resultStats']", "xpath:attributes"],
+        ["xpath=//div[@id='sbfrm_l']/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81a384df-9ef0-412c-8520-9388d325ead3",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=resultStats",
+      "targets": [],
+      "value": "resultValue"
+    }, {
+      "id": "4dbd1c29-ed4d-4424-af36-b9600d980def",
+      "comment": "",
+      "command": "echo",
+      "target": "${resultValue}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b6d1ed2-c23e-4ccf-8aad-2dd0a7aa6035",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h3[contains(.,'Office Supplies, Office Furniture and Stationery | Staples®')]",
+      "targets": [
+        ["css=.rc:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div[2]/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Office Supplies, Office Furniture and Stationery | Staples®')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aab7268-01cf-4245-bd3c-44ff04a9a0e9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.hdr_logo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40d4cc7b-1c2f-4ce9-a3d8-a52edd0f0495",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hdr_logo",
+      "targets": [
+        ["css=.hdr_logo", "css:finder"],
+        ["xpath=//img[@alt='Staples®']", "xpath:img"],
+        ["xpath=//div[@id='webSliceDefault']/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85d66704-799e-4cfe-90c9-0ce9004531cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdr_logo",
+      "targets": [
+        ["css=.hdr_logo", "css:finder"],
+        ["xpath=//img[@alt='Staples®']", "xpath:img"],
+        ["xpath=//div[@id='webSliceDefault']/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d338298f-5f1f-4a9d-8cef-1851b8478488",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hdr_logo",
+      "targets": [
+        ["css=.hdr_logo", "css:finder"],
+        ["xpath=//img[@alt='Staples®']", "xpath:img"],
+        ["xpath=//div[@id='webSliceDefault']/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62d49d0f-9256-4517-95e0-6ce142da3d9b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d6f10194-cb35-4daf-8439-e6268d57b59f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ecf4ba3c-10be-4da9-adaf-8e2356f87166"]
+  }],
+  "urls": ["https://www.google.pl/"],
+  "plugins": []
+}
